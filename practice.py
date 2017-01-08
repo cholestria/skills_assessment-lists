@@ -161,9 +161,8 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    for each in [words]:
-        newlist = [len(each) for each in words]
-        return newlist
+    newlist = [len(each) for each in words]
+    return newlist
         
 
 def sum_numbers(numbers):
@@ -182,8 +181,13 @@ def sum_numbers(numbers):
         >>> sum_numbers([])
         0
     """
+    #new_number_list = sum(numbers)
 
-    return None
+    new_number_list = 0
+    for each in numbers:
+        new_number_list += int(each)
+
+    return new_number_list
 
 
 def mult_numbers(numbers):
