@@ -81,9 +81,11 @@ def foods_in_common(foods1, foods2):
         []
 
     """
+    common_list = []
     for item in foods1: 
         if item in foods2:
-            print item
+            common_list.append(item)
+    return sorted(common_list)       
 
     #return ['the wrong thing']
 
