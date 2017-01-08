@@ -145,9 +145,9 @@ def halvesies(numbers):
         >>> halvesies([1, 5])
         [0.5, 2.5]
     """
-
+    halvesies = []
     for each in numbers:
-        return .5*int(numbers)
+        halvesies += each
 
     #return []
 
@@ -234,7 +234,10 @@ def join_strings(words):
         ''
     """
 
-    return "Not the right thing"
+    #for each in words:
+
+
+    #return "Not the right thing"
 
 
 def average(numbers):
