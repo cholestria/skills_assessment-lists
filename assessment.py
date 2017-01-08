@@ -82,12 +82,10 @@ def foods_in_common(foods1, foods2):
 
     """
     common_list = []
-    for item in foods1: 
+    for item in foods1:
         if item in foods2:
             common_list.append(item)
-    return sorted(common_list)       
-
-    #return ['the wrong thing']
+    return sorted(common_list)
 
 
 def every_other_item(items):
@@ -104,7 +102,10 @@ def every_other_item(items):
        ['you', 'are', 'good', 'at', 'code']
     """
 
-    return ['the wrong thing']
+    for each in items:
+        every_other = items[::2]
+    return every_other
+
 
 
 def largest_n_items(items, n):
