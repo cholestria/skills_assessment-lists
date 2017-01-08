@@ -147,7 +147,7 @@ def halvesies(numbers):
     """
     halvesies = []
     for each in numbers:
-        halvesies += each
+        halvesies += int(each)*.5
 
     #return []
 
