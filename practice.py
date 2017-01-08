@@ -316,8 +316,9 @@ def reverse_list(items):
         ['apple', 'berry', 'cherry']
     """
 
+    reversed_list = []
     for each in items:
-        return items[-1:0]
+        return reversed_list.append(items[-1:0])
 
 
 def reverse_list_in_place(items):
@@ -372,7 +373,11 @@ def duplicates(items):
         ['apple', 'apple', 'berry']
     """
 
-    return []
+    duplicates_list = []
+    for each in items:
+        if items.count(each) > 1:
+            duplicates_list += [each]
+    return duplicates_list
 
 
 def find_letter_indices(words, letter):
