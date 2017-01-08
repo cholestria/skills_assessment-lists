@@ -210,7 +210,11 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    new_number_list = 1
+    for each in numbers:
+        new_number_list *= int(each)
+
+    return new_number_list
 
 
 def join_strings(words):
