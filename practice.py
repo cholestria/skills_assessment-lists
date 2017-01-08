@@ -147,7 +147,7 @@ def halvesies(numbers):
     """
     halvesies = []
     for each in numbers:
-        halvesies += int(each)*.5
+        halvesies += float(each)*.5
 
     #return []
 
@@ -234,8 +234,12 @@ def join_strings(words):
         ''
     """
 
-    #for each in words:
-
+    new_string = []
+    for each in words:
+        if words > 0:
+            new_string += each
+        else:    
+            return None
 
     #return "Not the right thing"
 
@@ -260,7 +264,11 @@ def average(numbers):
     a feel free to provide a good solution here.)
     """
 
-    return 0
+    new_number_list = 0
+    for each in numbers:
+        new_number_list += int(each)
+        average_list = float(new_number_list / len(numbers))
+    return average_list
 
 
 def join_strings_with_comma(words):
@@ -308,7 +316,8 @@ def reverse_list(items):
         ['apple', 'berry', 'cherry']
     """
 
-    return []
+    for each in items:
+        return items[-1:0]
 
 
 def reverse_list_in_place(items):
