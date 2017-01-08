@@ -81,8 +81,11 @@ def foods_in_common(foods1, foods2):
         []
 
     """
+    for item in foods1: 
+        if item in foods2:
+            print item
 
-    return ['the wrong thing']
+    #return ['the wrong thing']
 
 
 def every_other_item(items):
