@@ -107,7 +107,6 @@ def every_other_item(items):
     return every_other
 
 
-
 def largest_n_items(items, n):
     """Return the `n` largest integers in list, in ascending order.
 
@@ -130,7 +129,13 @@ def largest_n_items(items, n):
         [3, 3]
     """
 
-    return []
+    items = sorted(items)
+    if n == 0:
+        return []
+    else:
+        largest_item_list = items[-n:]
+        return largest_item_list
+
 
 
 #####################################################################
