@@ -122,7 +122,13 @@ def largest_int(numbers):
         True
     """
 
-    return 0
+    if len(numbers) > 0:
+        numbers = sorted(numbers)
+        return numbers[-1]
+    else:
+        return None
+
+    #return 0
 
 
 def halvesies(numbers):
@@ -140,7 +146,10 @@ def halvesies(numbers):
         [0.5, 2.5]
     """
 
-    return []
+    for each in numbers:
+        return .5*int(numbers)
+
+    #return []
 
 
 def word_lengths(words):
@@ -152,8 +161,10 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    return []
-
+    for each in [words]:
+        newlist = [len(each) for each in words]
+        return newlist
+        
 
 def sum_numbers(numbers):
     """Return the sum of all of the numbers in the list.
@@ -258,7 +269,9 @@ def join_strings_with_comma(words):
         'Pretzel'
     """
 
-    return ""
+    return words.rstrip([])
+
+    #return ""
 
 
 def reverse_list(items):
